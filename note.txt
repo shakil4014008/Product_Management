@@ -1,0 +1,139 @@
+to stop the server:
+ctrl+c
+
+open integrated terminal and npm start
+
+workspace: files.autosave: true. 
+
+Modules:
+  angularjs module
+typescript module
+angular module
+es 2015 module
+
+product.ts//it is a module
+product 
+
+
+export or import
+
+product.js//after transpile
+angular module: 
+  root->component
+we can gr modules
+shared module
+lazy load: as it is needed
+ES m vs Angular m
+code -- application
+
+npm install will install node module. then run: npm start.
+
+---------
+create components
+-- meaning purpose
+
+component: ts file contains
+class use export, metadata contains view, 
+
+@Component({
+
+}
+
+Decorator: a function that adds metadata to a class, its member or its method arguments
+- started with @
+
+like attribute
+
+@Component({
+
+ selector: 'pm-root',
+ template: <div>{{pageTitle}}</div>
+
+})
+
+
+---defining the metadata---
+--here @component - component decorator
+pm-root: directive name
+pageTitle: Binding
+full html: view layout
+
+
+export class AppComponent{
+pageTitle: string = 'Acme Product Management';
+
+}
+
+
+-------------
+importing://like c# using 
+part of es 2015
+
+
+angular is modular:
+ -angular core
+-angular animate
+-angular http
+-angular router
+
+learn:https://npmjs.com/~angular
+
+//available library package and version
+--------
+
+import {Component} from '@angular/core';
+
+@Component({
+selector:
+template:
+
+})
+export class AppComponent{
+
+
+}
+
+
+ts is component file. 
+
+after root component, do bootstraping 
+
+index.html--host 
+define root angular to boost app
+
+spa...just one html page...
+
+pm-root ---directive
+
+AppModule {organization, boundaries, template reso}
+
+
+
+app.module.ts
+//angular module
+
+
+import, export, declaration, provider, bootstrap
+
+.ts
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+
+ctrl+sh+p
+
+
